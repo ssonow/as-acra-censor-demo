@@ -1,4 +1,4 @@
-FROM storojs72/edoz90_mutillidae:latest
+FROM cesena:mutillidae
 
 ADD ./configure_db.sh /tmp/configure_db.sh
 RUN /bin/bash /tmp/configure_db.sh

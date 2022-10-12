@@ -15,7 +15,6 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' identified by '${MYSQL_ROOT_PASSWORD}'
 UPDATE user SET password=PASSWORD("${MYSQL_ROOT_PASSWORD}") WHERE user='root' AND host='localhost';
 CREATE DATABASE IF NOT EXISTS ${MYSQL_DB} CHARACTER SET utf8 COLLATE utf8_general_ci;
 GRANT ALL ON ${MYSQL_DB}.* TO '${MYSQL_USER}'@'%' IDENTIFIED BY '${MYSQL_PASSWORD}';
-INSERT INTO `tables_priv` (`Host`, `Db`, `User`, `Table_name`, `Grantor`, `Timestamp`, `Table_priv`, `Column_priv`) VALUES ('localhost','mysql','mariadb.sys','global_priv','root@localhost','0000-00-00 00:00:00','Select,Delete','');
 FLUSH PRIVILEGES;
 EOF
 

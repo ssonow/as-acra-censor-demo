@@ -102,11 +102,11 @@ services:
 
     #===== OWASP Mutillidae II =================================================
 
-    edoz90_mutillidae:
+    cesena_mutillidae:
         # Build base image
         build:
-            context: https://github.com/storojs72/docker-mutillidae.git
-        image: storojs72/edoz90_mutillidae:latest
+            context: https://github.com/ssonow/as-docker-mutillidae.git 
+        image: cesena:mutillidae
         # We don't need to run the container based on the original image
         entrypoint: /bin/true
         restart: 'no'
@@ -115,7 +115,7 @@ services:
     mutillidae:
         depends_on:
             - acra-connector
-            - edoz90_mutillidae
+            - cesena_mutillidae
         build:
             context: ./mutillidae
         image: mutillidae:latest

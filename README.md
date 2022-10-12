@@ -1,5 +1,7 @@
 # What is this?
 
+Fork and fix some old link url errors. 
+
 This project illustrates how to use [AcraCensor](https://docs.cossacklabs.com/pages/documentation-acra/#acracensor-acra-s-firewall) as SQL firewall to prevent SQL injections. Target application is a well-known vulnerable web application [OWASP Mutillidae 2](https://github.com/webpwnized/mutillidae). 
 
 AcraCensor – is a built-in SQL firewall of [Acra data protection suite](https://cossacklabs.com/acra/). This project is one of numerous Acra's example applications. If you are curious about other Acra features, like transparent encryption, intrusion detection, load balancing support – [Acra Example Applications](https://github.com/cossacklabs/acra-engineering-demo/).
